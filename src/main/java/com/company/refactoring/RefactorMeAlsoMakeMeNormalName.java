@@ -2,8 +2,6 @@ package com.company.refactoring;
 
 import com.company.objects.BankProcessor;
 import com.company.objects.CardProcessor;
-import jdk.nashorn.internal.objects.annotations.Function;
-
 import java.beans.Transient;
 import java.util.Collections;
 import java.util.List;
@@ -60,7 +58,6 @@ public class RefactorMeAlsoMakeMeNormalName {
     }
 
     @Transient
-    @Function
     public String cardWithName(List<Card> card, String number) {
 
         for (int i = 0; i < card.size(); i++) {
